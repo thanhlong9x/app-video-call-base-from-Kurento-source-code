@@ -1,0 +1,20 @@
+<div class="container-fluid text-center">
+    <div class="row">
+        <div class="col-md-4 col-lg-4">
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-4 login">
+            <h1>Create a new Room Share or Join Room Share</h1>
+            <div>
+                <p>
+                    <input type="text" name="room" value="" id="roomShareName"
+                           placeholder="Room" ng-model="roomShare" required>
+                </p>
+                <p class="submit">
+                    <input ng-click="registerShare();"  type="submit" name="commit" value="Share Screen">
+                    <input ng-click="viewShare();" type="submit" name="commit" value="View">
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

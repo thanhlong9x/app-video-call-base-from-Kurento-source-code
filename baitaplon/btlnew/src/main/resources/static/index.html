@@ -1,0 +1,47 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="styleSheet" href="style.css" type="text/css" media="screen">
+    <link rel="stylesheet"
+          href="webjars/bootstrap/dist/css/bootstrap.min.css">
+    <script src="webjars/jquery/dist/jquery.min.js"></script>
+    <script src="webjars/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="webjars/adapter.js/adapter.js"></script>
+
+    <script src="./javascript/main.js"></script>
+    <script src="./javascript/login.js"></script>
+    <script src="./javascript/header.js"></script>
+    <script src="./javascript/home.js"></script>
+    <script src="./javascript/mainService.js"></script>
+    <script src="./javascript/participant.js"></script>
+    <script src="./javascript/joinshare.js"></script>
+    <script src="./javascript/viewshare.js"></script>
+    <script src="./javascript/joincall.js"></script>
+    <script src="./javascript/viewcall.js"></script>
+    <script src="./javascript/view.js"></script>
+
+    <script src="./js/kurento-utils.js"></script>
+
+
+    <script type="text/javascript">
+        angular.element(document.getElementsByTagName('head')).append(angular.element('<base href="' + window.location.pathname + '" />'));
+    </script>
+    <script src="https://unpkg.com/@angular/router@0.2.0/angular1/angular_1_router.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+    <script src="./javascript/main.js"></script>
+</head>
+<!--<body ng-app="app">-->
+<body ng-app="main">
+<div class="container-fluid">
+    <header></header>
+    <div ng-view></div>
+    <div class="col-sm-12 footer">
+        <p>Copyright © SuperManGotNot</p>
+    </div>
+</div>
+</body>
+
+</html>
+
+

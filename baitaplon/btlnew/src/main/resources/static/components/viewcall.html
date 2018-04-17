@@ -1,0 +1,28 @@
+<div id="room" class="container-fluid text-center" style="margin-top:80px;">
+    <!-- left -->
+    <div class="col-xs-12 col-sm-8 col-lg-9 text-right" style="padding:0px 50px 0px 50px;">
+        <div><h2 class="col-xs-12 col-sm-12 col-md-12" id="room-header"></h2></div>
+        <div id="participants">
+            <div class=""></div>
+        </div>
+    </div>
+
+    <!-- right -->
+    <div class="right col-xs-0 col-sm-4 col-lg-3 text-left" >
+        <div class="col-xs-12 box" id="box" style="border: 1px solid black">
+            <div id="boss"></div>
+            <div class="MuLe">
+                <input type="button" class="btn btn-danger active" id="button-sound" ng-click="disableSound()"
+                       value="Disable Sound">
+                <input type="button" class="btn btn-primary active" id="button-leave" ng-click="leaveRoom()"
+                       value="Leave room">
+            </div>
+        </div>
+
+        <div class="joinlist">
+            <div id="msg">
+            </div>
+        </div>
+
+    </div>
+</div>

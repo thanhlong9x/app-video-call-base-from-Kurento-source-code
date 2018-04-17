@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/kurento-group-call/kurento-group-call.iml" filepath="$PROJECT_DIR$/kurento-group-call/kurento-group-call.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kurento-tutorial.iml" filepath="$PROJECT_DIR$/kurento-tutorial.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Call</title>
+	<link rel="stylesheet" href="../../vendor/css/myStyle.css">
+
+	<link rel="stylesheet" href="../../vendor/bootstrap-3.3.7-dist/css/bootstrap.css" type="text/css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script-->
+	<script src="../../vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script src="../../vendor/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src='call.js'></script>
+	<script>
+		$(document).ready(function(){
+			console.log('name: '+ name);
+			$("#boss").text("My boss's room: "+ name);
+		});
+	</script>
+</head>
+<body>
+	<!-- thanh dieu huong -->
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		  <div class="container-fluid navbar-custom">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="../Home/home.html"></a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav" >
+		        <li><a href="call.html" style="color: white">Call now</a></li>
+		        <li><a href="../myLivestream/mylive.html" style="color: white">Live now</a></li>
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="../Wall/profile.html" style="color: white">Profile</a></li>
+		        <li><a onclick="Logout();"  style="color: white">Đăng xuất</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+  		</div><!-- /.container-fluid -->
+	</nav>
+
+	<!-- main content -->
+	<div id="room" class="container-fluid text-center" style="margin-top:80px;">
+		<!-- left -->
+
+		<h2 id="room-header"></h2>
+		<div id="participants"></div>
+
+		<!-- <div class="col-xs-12 col-sm-8 col-lg-9 text-right" style="padding:25px 25px">
+				<div class="col-xs-12 col-sm-6 col-md-5">
+					<div class="panel panel-primary">
+						<div class="panel-body">
+							<video class="video">
+								<source src="../../vendor/video/Summer.mp4?autoplay=0" type="video/mp4" />							
+							</video>
+							<div class="volume"></div>
+						</div>
+						<div class="panel-footer">
+							<a class="member">Le Thanh Thuy</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-6 col-md-5" >
+					<div class="panel panel-primary">
+						<div class="panel-body">
+							<video class="video">
+								<source src="../../vendor/video/Summer.mp4?autoplay=0" type="video/mp4" />							
+							</video>
+							<div class="volume"></div>
+						</div>
+						<div class="panel-footer">
+							<a class="member">Le Thanh Thuy</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-6 col-md-5" >
+					<div class="panel panel-primary">
+						<div class="panel-body">
+							<video  class="video">
+								<source src="../../vendor/video/Summer.mp4?autoplay=0" type="video/mp4" />							
+							</video>
+							<div class="volume"></div>
+						</div>
+						<div class="panel-footer">
+							<a class="member">Le Thanh Thuy</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-xs-12 col-sm-6 col-md-5" >
+					<div class="panel panel-primary">
+						<div class="panel-body">
+							<video  class="video">
+								<source src="../../vendor/video/Summer.mp4?autoplay=0" type="video/mp4" />							
+							</video>
+							<div class="volume"></div>
+						</div>
+						<div class="panel-footer">
+							<a class="member">Le Thanh Thuy</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-xs-12 col-sm-6 col-md-5">
+					<div class="panel panel-primary">
+						<div class="panel-body">
+							<video  class="video">
+								<source src="../../vendor/video/Summer.mp4?autoplay=0" type="video/mp4" />							
+							</video>
+							<div class="volume"></div>
+						</div>
+						<div class="panel-footer">
+							<a class="member">Le Thanh Thuy</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-xs-12 col-sm-6 col-md-5" >
+					<div class="panel panel-primary">
+						<div class="panel-body">
+							<video  class="video">
+								<source src="../../vendor/video/Summer.mp4?autoplay=0" type="video/mp4" />							
+							</video>
+							<div class="volume"></div>
+						</div>
+						<div class="panel-footer">
+							<a class="member">Le Thanh Thuy</a>
+						</div>
+					</div>
+				</div>
+
+		</div> -->
+
+		<!-- right -->
+		<div class=" col-xs-0 col-sm-4 col-lg-3 text-left" >
+			<div class="col-xs-12 box" id="box" style="border: 1px solid black">
+				<div id="boss"></div>
+				<div class="btn-group btn-group-justified">
+				    <a onclick="Mute();" class="btn btn-danger active">Mute</a>
+				    <a onclick="Out();" class="btn btn-primary active">Out Room</a>
+				</div>
+			</div>
+
+			<div class="calllist" id="calllist">
+				<div class="item">
+					<h4 style="text-align: center;">Chiennv</h4>
+					<hr>
+					<div class="btn-group btn-group-justified">
+						<a onclick="Accept();" class="btn btn-success active">Accept</a>
+					    <a onclick="Ignore();" class="btn btn-warning active">Ignore</a>
+					</div>
+				</div>
+				<div class="item">
+					<h4 style="text-align: center;">Quangvm</h4>
+					<hr>
+					<div class="btn-group btn-group-justified">
+						<a onclick="Accept();" class="btn btn-success active">Accept</a>
+					    <a onclick="Ignore();" class="btn btn-warning active">Ignore</a>
+					</div>
+				</div>
+				<div class="item">
+					<h4 style="text-align: center;">Minhtc</h4>
+					<hr>
+					<div class="btn-group btn-group-justified">
+						<a onclick="Accept();" class="btn btn-success active">Accept</a>
+					    <a onclick="Ignore();" class="btn btn-warning active">Ignore</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- footer -->
+	<footer class="container-fluid text-center ">
+		<div class="row">
+			<div class="col-sm-12 footer">
+				<p>Copyright © SuperManGotNot</p>
+			</div>	
+		</div>
+	</footer>
+</body>
+</html>

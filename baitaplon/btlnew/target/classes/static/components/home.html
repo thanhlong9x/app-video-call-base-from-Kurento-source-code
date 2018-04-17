@@ -1,0 +1,27 @@
+<div id="MainWrap" class="container-fluid text-center" style="margin-top:80px">
+    <!-- left -->
+    <div class="col-xs-12 col-sm-8 col-lg-9 text-right">
+        <div class="room"></div>
+        <div class="roomnew"></div>
+
+    </div>
+
+    <!--right-->
+    <div class=" col-xs-0 col-sm-4 col-lg-3 text-left">
+        <div class="col-xs-12 smallcalllist" id="smallcalllist">
+            <button type="button" class="btn btn-primary btn-block text-left">Call list</button>
+        </div>
+        <div class="calllist" id="calllist">
+            <h4 style="text-align: center;">Call list</h4>
+            <div class="person" ng-repeat="online in listOnline">
+                <div class="col-xs-2 avatar">
+                    <img class="callimg" src="../vendor/imgs/anh-1.png">
+                </div>
+                <div class="col-xs-10 nameperson">
+                    <a>{{online}}</a>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+</div>
